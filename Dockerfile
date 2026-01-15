@@ -18,6 +18,7 @@ RUN apt-get update && \
       gnupg \
       iputils-ping \
       jq \
+      parallel \
       software-properties-common \
       unzip \
       wget \
