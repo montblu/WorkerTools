@@ -9,16 +9,26 @@ Inspired by [OctopusDeploy/worker-tools](https://github.com/OctopusDeploy/Worker
 ## Why This Image?
 
 The official image is comprehensive but large (6.06 GB). We built this from scratch to be:
-- **Smaller**: 1.08 GB (82% reduction)
+- **Smaller**: 638 MB (90% reduction)
 - **Focused**: Only our required tools
 - **Simpler**: Easier to maintain
 
 ## Tools
 
-- .NET SDK 8.0
-- kubectl v1.33.7
-- Helm v3.19.5
+### Core Tools
+
 - AWS CLI v2.31.18
+- Helm v3.19.5
+- Kubectl v1.33.7
+
+### System Utilities
+
+- curl
+- jq
+- parallel
+- unzip
+- wget
+- xxd
 
 ## Usage
 
