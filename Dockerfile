@@ -7,19 +7,13 @@ ENV DEBIAN_FRONTEND=noninteractive \
 
 # Update and install base dependencies
 RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y \
-      apt-transport-https \
-      apt-utils \
+    apt-get install -y --no-install-recommends \
       ca-certificates \
       curl \
-      gnupg \
-      iputils-ping \
       jq \
+      libicu-dev \
       parallel \
-      software-properties-common \
       unzip \
-      wget \
       xxd && \
     apt-get autoremove && \
     apt-get clean && \
