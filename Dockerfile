@@ -14,7 +14,6 @@ RUN apt-get update && \
       apt-utils \
       ca-certificates \
       curl \
-      dotnet-sdk-${DOTNET_SDK_VERSION} \
       gnupg \
       iputils-ping \
       jq \
@@ -23,7 +22,6 @@ RUN apt-get update && \
       unzip \
       wget \
       xxd && \
-    apt-get install -y dotnet-sdk-8.0 && \
     apt-get autoremove && \
     apt-get clean && \
     rm -rf \
