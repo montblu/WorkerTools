@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM debian:12-slim
 
 ENV DEBIAN_FRONTEND=noninteractive \
   AWS_CLI_VERSION=2.31.18 \
