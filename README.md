@@ -34,7 +34,7 @@ The official image is comprehensive but large (6.06 GB). We built this from scra
 
 ```bash
 # Pull
-docker pull ghcr.io/<username>/worker-tools:latest
+docker pull ghcr.io/montblu/worker-tools:latest
 
 # Build
 docker build -t worker-tools .
