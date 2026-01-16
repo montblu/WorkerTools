@@ -8,10 +8,19 @@ Inspired by [OctopusDeploy/worker-tools](https://github.com/OctopusDeploy/Worker
 
 ## Why This Image?
 
-The official image is comprehensive but large (6.06 GB). We built this from scratch to be:
-- **Smaller**: 638 MB (90% reduction)
+The official image is comprehensive but large (4.94 GB). We built this from scratch to be:
+- **Smaller**: 598 MB (88% reduction)
 - **Focused**: Only our required tools
 - **Simpler**: Easier to maintain
+
+## Comparison
+
+| Image | Size |
+|-------|------|
+| octopusdeploy/worker-tools:6.1.0-ubuntu.22.04 | 4.94 GB |
+| ghcr.io/montblu/workertools:0.1.0 | 598 MB |
+
+**We stripped out everything we didn't need and only added the tools we required.**
 
 ## Tools
 
@@ -26,15 +35,13 @@ The official image is comprehensive but large (6.06 GB). We built this from scra
 - curl
 - jq
 - parallel
-- unzip
-- wget
 - xxd
 
 ## Usage
 
 ```bash
 # Pull
-docker pull ghcr.io/montblu/worker-tools:latest
+docker pull ghcr.io/montblu/workertools:0.1.0
 
 # Build
 docker build -t worker-tools .
