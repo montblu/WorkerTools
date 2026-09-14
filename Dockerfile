@@ -1,9 +1,9 @@
 FROM debian:12-slim as installer
 
 ENV DEBIAN_FRONTEND=noninteractive \
-  AWS_CLI_VERSION=2.31.18 \
-  HELM_VERSION=v3.19.5 \
-  KUBECTL_VERSION=1.33.7
+  AWS_CLI_VERSION=2.36.45 \
+  HELM_VERSION=v3.22.0 \
+  KUBECTL_VERSION=1.35.8
 
 RUN apt-get update &&\
     apt-get install -y \
