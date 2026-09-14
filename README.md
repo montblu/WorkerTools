@@ -26,9 +26,9 @@ The official image is comprehensive but large (4.94 GB). We built this from scra
 
 ### Core Tools
 
-- AWS CLI v2.31.18
-- Helm v3.19.5
-- Kubectl v1.33.7
+- AWS CLI v2.36.45
+- Helm v3.22.0
+- Kubectl v1.35.8
 
 ### System Utilities
 
