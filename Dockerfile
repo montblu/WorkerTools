@@ -1,4 +1,6 @@
-FROM debian:12-slim as installer
+ARG DEBIAN_VERSION=13.6-slim
+
+FROM debian:${DEBIAN_VERSION} AS installer
 
 ENV DEBIAN_FRONTEND=noninteractive \
   AWS_CLI_VERSION=2.31.18 \
@@ -28,7 +30,7 @@ RUN curl -fsSL -o /usr/local/bin/kubectl "https://dl.k8s.io/release/v${KUBECTL_V
     chmod +x /usr/local/bin/kubectl
 
 
-FROM debian:12-slim
+FROM debian:${DEBIAN_VERSION}
 
 ENV DEBIAN_FRONTEND=noninteractive
 
